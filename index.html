@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIMPUNAN MAHASISWA IMKT KABUPATEN TANGERANG</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9fc;
+      color: #333;
+    }
+    header {
+      background: #004aad;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header img {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    nav {
+      background: #003b8e;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #004aad;
+      margin-bottom: 20px;
+    }
+    .kegiatan, .galeri {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .galeri img {
+      width: 100%;
+      border-radius: 12px;
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .galeri img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px;
+      background: #004aad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #003b8e;
+    }
+    footer {
+      background: #003b8e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logoimkt.jpeg" alt="Logo IMKT" />
+    <h1>HIMPUNAN MAHASISWA IMKT KABUPATEN TANGERANG</h1>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kegiatan">Kegiatan</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Resmi IMKT</h2>
+    <p style="text-align:center;">Wadah kebersamaan dan pengembangan mahasiswa Kabupaten Tangerang menuju masa depan yang lebih baik.</p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang IMKT</h2>
+    <p>
+      IMKT (Ikatan Mahasiswa Kabupaten Tangerang) adalah organisasi yang berfungsi sebagai wadah komunikasi,
+      pengembangan diri, dan pengabdian mahasiswa asal Kabupaten Tangerang di berbagai perguruan tinggi.
+    </p>
+  </section>
+
+  <section id="kegiatan">
+    <h2>Kegiatan Kami</h2>
+    <div class="kegiatan">
+      <div class="card">
+        <h3>Pelatihan Kepemimpinan</h3>
+        <p>Membentuk jiwa pemimpin yang berintegritas dan bertanggung jawab.</p>
+      </div>
+      <div class="card">
+        <h3>Bakti Sosial</h3>
+        <p>Kegiatan sosial untuk membantu masyarakat sekitar dan mempererat kepedulian.</p>
+      </div>
+      <div class="card">
+        <h3>Forum Diskusi Mahasiswa</h3>
+        <p>Ajang berbagi ide, gagasan, dan aspirasi mahasiswa IMKT.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri">
+    <h2>Galeri Kegiatan</h2>
+    <div class="galeri">
+      <img src="FOTO KEGIATAN.jpeg" alt="Kegiatan 1">
+      <img src="https://i.ibb.co/XYZ2.jpg" alt="Kegiatan 2">
+      <img src="https://i.ibb.co/XYZ3.jpg" alt="Kegiatan 3">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Hubungi Kami</h2>
+    <form action="https://formsubmit.co/alziarymahendra9@gmail.com" method="POST">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Alamat Email" required>
+      <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda..." required></textarea>
+      <button type="submit">Kirim Pesan</button>
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://imkt.blogspot.com/">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IMKT Kabupaten Tangerang. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
